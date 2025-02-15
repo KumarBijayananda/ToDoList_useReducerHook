@@ -15,10 +15,14 @@
 ul{
   list-style-type: none;
   font-size: 20px;
+  align-items: left;
 }
 
 input{
   font-size: 18px;
   margin: 5px;
   padding: 5px;
+}
+.addBtn{
+  font-size: 20px;
 }
