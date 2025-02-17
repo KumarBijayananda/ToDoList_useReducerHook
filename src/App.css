@@ -1,28 +1,118 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-
-.listItem{
+/* Dark Mode Styles */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Arial', sans-serif;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-ul{
-  list-style-type: none;
-  font-size: 20px;
-  align-items: left;
+/* Header */
+h1 {
+  color: #f1bdbd;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
 }
 
-input{
-  font-size: 18px;
-  margin: 5px;
-  padding: 5px;
+/* Main Container */
+.mainContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
-.addBtn{
-  font-size: 20px;
+
+/* Input Fields */
+input {
+  font-size: 15px;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #e0e0e0;
+  outline: none;
+}
+
+
+/* Add Button */
+.addBtn {
+  background-color: #f1bdbd;
+  color: #121212;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: #db4848;
+}
+
+/* To-do List */
+ul {
+  list-style: none;
+  padding: 0;
+  width: 500px;
+}
+
+/* List Item */
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Checkbox */
+.check {
+  accent-color: #f1bdbd;
+  transform: scale(1.2);
+}
+
+/* List Text */
+li {
+  flex: 1;
+  padding: 0 10px;
+  word-break: break-word;
+}
+
+/* Buttons */
+button {
+  background-color: #333;
+  color: #e0e0e0;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+/* Delete Button */
+.delete {
+  background-color: #d32f2f;
+}
+
+.delete:hover {
+  background-color: #b71c1c;
+}
+
+/* Edit Button */
+.edit {
+  background-color: #d32f2f;
+}
+
+.edit:hover {
+  background-color: #b71c1c;
 }
